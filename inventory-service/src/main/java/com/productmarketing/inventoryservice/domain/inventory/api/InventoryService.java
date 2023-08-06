@@ -1,5 +1,9 @@
 package com.productmarketing.inventoryservice.domain.inventory.api;
 
+import com.productmarketing.inventoryservice.domain.inventory.web.InventoryResponse;
+
+import java.util.List;
+
 public interface InventoryService {
-    public boolean isInStock(String skuCode);
+     List<InventoryResponse> isInStock(List<String> skuCode);
 }
