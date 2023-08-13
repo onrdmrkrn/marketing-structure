@@ -9,6 +9,12 @@ logging:
 
 ## Product Service Route
 spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8181/realms/marketing-structure-realm
+
   application:
     name: api-gateway
   cloud:
@@ -37,7 +43,6 @@ spring:
             - Path=/eureka/web
           filters:
             - SetPath=/
-
         ## Discovery Server Static Resources Route
         - id: discovery-server-static
           uri: http://localhost:8761

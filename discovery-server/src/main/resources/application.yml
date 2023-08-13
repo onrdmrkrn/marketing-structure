@@ -4,5 +4,7 @@ eureka:
   client:
     registerWithEureka: false # Indicates whether this instance should register itself with the discovery server.
     fetchRegistry: false # Indicates whether this client should fetch eureka registry information from eureka server.
+  username:   ${EUREKA_USERNAME:eureka} # username : eureka
+  password : ${EUREKA_USERNAME:password}
 server:
     port: 8761
