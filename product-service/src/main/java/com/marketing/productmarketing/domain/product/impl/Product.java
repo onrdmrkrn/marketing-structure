@@ -11,6 +11,7 @@ import java.math.BigDecimal;
 @Document(value = "product")
 @AllArgsConstructor
 @NoArgsConstructor
+
 public class Product {
     @Id
     private String id;
